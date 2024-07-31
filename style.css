@@ -11,12 +11,17 @@
 /* Defining Custome Variables */
 :root {
     /* Colors */
-    --primary-color: #3b141c;
-    --secondary-color: #f3961c;
-    --dark-color: #252525;
-    --white-color: #fff;
-    --light-gray-color: #f2f2f2;
+    --primary-color: #4a4e69;
+    --secondary-color: #0e0101;
+    --dark-color: #8ee4af;
+    --white-color: #edf5e1;
+    --light-gray-color: #05386b;
+    
+    
+    
+    
 
+    
     /* Site Max-Width */
     --site-max-width: 1300px;
 }
@@ -60,6 +65,37 @@ ul {
     margin: 7px auto 0;
     border-radius: 8px;
 }
+
+.scroll-header{
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+/* Scroll top */
+.scrolltop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    z-index: 100;
+}
+
+.scrolltop__icon {
+    font-size: 24px;
+}
+
+.scrolltop.show-scroll {
+    display: flex;
+}
+
 
 /* Styling for the header section */
 header {
@@ -111,7 +147,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--primary-color);
+    color: var(--white-color);
     background-color: var(--secondary-color);
 }
 
@@ -177,7 +213,7 @@ label .close_btn {
     outline: none;
     cursor: pointer;
     border-radius: 50px;
-    background: var(--secondary-color);
+    background: var(--white-color);
     color: var(--primary-color);
     font-size: 18px;
     font-weight: 600;
@@ -213,7 +249,7 @@ label .close_btn {
 /* About Us Section */
 .about_us {
     padding: 60px 20px 120px;
-    background: var(--light-gray-color);
+    background: var(--white-color);
 }
 
 .about_container {
@@ -245,7 +281,7 @@ label .close_btn {
 
 /* Services Section */
 .services {
-    background: var(--dark-color);
+    background: var(--primary-color);
     color: var(--white-color);
     padding: 60px 20px 120px;
 }
@@ -282,7 +318,7 @@ label .close_btn {
 
 /* Why Us Section */
 .why_us {
-    background: var(--light-gray-color);
+    background: var(--white-color);
     padding: 60px 20px 120px;
 }
 
@@ -323,26 +359,27 @@ label .close_btn {
 
 /* Gallery Section */
 .gallery {
-    background: var(--white-color);
+    background: var(--primary-color);
     padding: 60px 20px 100px;
 }
 
 .gallery .gallery_container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 32px;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.gallery_container .gallery_items {
-    width: calc(100% / 3 - 32px);
-    overflow: hidden;
-    border-radius: 8px;
+.gallery .gallery_items {
+    width: calc(100% / 3 - 32px); /* 50% width minus half of the gap */
+    box-sizing: border-box; /* Ensure padding and border are included in the width calculation */
+    margin-bottom: 32px; /* Space between rows */
 }
 
+
 .gallery .gallery_container img {
-    width: 100%;
+    width: 80%;
     border-radius: 8px;
     transition: transform 0.4s ease;
 }
@@ -353,7 +390,7 @@ label .close_btn {
 
 /* Contact Section */
 .contact {
-    background: var(--light-gray-color);
+    background: var(--white-color);
     padding: 60px 20px 100px;
 }
 
@@ -431,7 +468,7 @@ label .close_btn {
 
 /* Footer Section */
 footer {
-    background: #1b1b1b;
+    background: #2a2a2a;
     color: var(--white-color);
     padding: 60px 20px;
 }
@@ -546,7 +583,7 @@ footer {
     }
 
     nav ul li a {
-        color: var(--dark-color);
+        color: var(--light-gray-color);
     }
 
     .hero_container {
