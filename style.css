@@ -11,17 +11,12 @@
 /* Defining Custome Variables */
 :root {
     /* Colors */
-    --primary-color: #4a4e69;
-    --secondary-color: #0e0101;
-    --dark-color: #8ee4af;
-    --white-color: #edf5e1;
-    --light-gray-color: #05386b;
-    
-    
-    
-    
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+    --dark-color: #252525;
+    --white-color: #fff;
+    --light-gray-color: #f2f2f2;
 
-    
     /* Site Max-Width */
     --site-max-width: 1300px;
 }
@@ -116,7 +111,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--white-color);
+    color: var(--primary-color);
     background-color: var(--secondary-color);
 }
 
@@ -218,7 +213,7 @@ label .close_btn {
 /* About Us Section */
 .about_us {
     padding: 60px 20px 120px;
-    background: var(--white-color);
+    background: var(--light-gray-color);
 }
 
 .about_container {
@@ -250,7 +245,7 @@ label .close_btn {
 
 /* Services Section */
 .services {
-    background: var(--primary-color);
+    background: var(--dark-color);
     color: var(--white-color);
     padding: 60px 20px 120px;
 }
@@ -287,7 +282,7 @@ label .close_btn {
 
 /* Why Us Section */
 .why_us {
-    background: var(--white-color);
+    background: var(--light-gray-color);
     padding: 60px 20px 120px;
 }
 
@@ -328,7 +323,7 @@ label .close_btn {
 
 /* Gallery Section */
 .gallery {
-    background: var(--primary-color);
+    background: var(--white-color);
     padding: 60px 20px 100px;
 }
 
@@ -358,7 +353,7 @@ label .close_btn {
 
 /* Contact Section */
 .contact {
-    background: var(--white-color);
+    background: var(--light-gray-color);
     padding: 60px 20px 100px;
 }
 
@@ -436,7 +431,7 @@ label .close_btn {
 
 /* Footer Section */
 footer {
-    background: #2a2a2a;
+    background: #1b1b1b;
     color: var(--white-color);
     padding: 60px 20px;
 }
@@ -551,7 +546,7 @@ footer {
     }
 
     nav ul li a {
-        color: var(--light-gray-color);
+        color: var(--dark-color);
     }
 
     .hero_container {
